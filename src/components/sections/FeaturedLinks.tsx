@@ -17,7 +17,7 @@ const FeaturedLinks = () => {
 				className="relative border border-dashed p-2 text-xs uppercase flex transition-all duration-200 ease-in-out hover:border-indigo-600 hover:bg-indigo-50/20 group/portfolio_link flex-row justify-center items-center md:aspect-video font-light"
 			>
 				<span>Portfolio</span>
-				<span className="*:text-black/20 *:group-hover/portfolio_link:text-indigo-600 *:transition-all *:duration-200 *:ease-in-out">
+				<span className="*:text-black/20 group-hover/portfolio_link:*:text-indigo-600 *:transition-all *:duration-200 *:ease-in-out">
 					<PiPlus className="absolute -top-[6.5px] -left-[6.5px]" />
 					<PiPlus className="absolute -top-[6.5px] -right-[6.5px]" />
 					<PiPlus className="absolute -bottom-[6.5px] -left-[6.5px]" />
