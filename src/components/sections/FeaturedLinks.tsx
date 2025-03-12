@@ -12,20 +12,7 @@ import FeaturedLink from "../ui/FeaturedLink";
 const FeaturedLinks = () => {
 	return (
 		<section className="flex flex-col md:flex-row">
-			<Link
-				href="https://viditkhandelwal.com"
-				className="relative border border-dashed p-2 text-xs uppercase flex transition-all duration-200 ease-in-out hover:border-indigo-600 hover:bg-indigo-50/20 group/portfolio_link flex-row justify-center items-center md:aspect-video font-light"
-			>
-				<span>Portfolio</span>
-				<span className="*:text-black/20 group-hover/portfolio_link:*:text-indigo-600 *:transition-all *:duration-200 *:ease-in-out">
-					<PiPlus className="absolute -top-[6.5px] -left-[6.5px]" />
-					<PiPlus className="absolute -top-[6.5px] -right-[6.5px]" />
-					<PiPlus className="absolute -bottom-[6.5px] -left-[6.5px]" />
-					<PiPlus className="absolute -bottom-[6.5px] -right-[6.5px]" />
-				</span>
-				<PiArrowUpRightBold className="duration-200 transition-all ease-in-out group-hover/portfolio_link:text-indigo-600" />
-			</Link>
-			<div className="py-2 flex flex-row items-center gap-4 w-full bg-black bg-opacity-[2.5%] border-y border-black/10">
+			<div className="md:w-2/3 py-2 flex flex-row items-center gap-4 w-full bg-black/5 bg-opacity-[2.5%] border-y border-black/10">
 				<div className="border-y px-1 border-y-black/15 w-full">
 					<div className="justify-center md:justify-start flex flex-row gap-[2px] w-full bg-white rounded-[7px] p-[2px]">
 						<FeaturedLink
@@ -56,6 +43,23 @@ const FeaturedLinks = () => {
 					</div>
 				</div>
 			</div>
+			<Link
+				href="https://viditkhandelwal.com"
+				className="bg-indigo-100 md:w-1/3 relative border py-2 hover:bg-indigo-200 border-dashed border-indigo-200 text-xs uppercase flex transition-all duration-200 ease-in-out hover:border-indigo-600  group/portfolio_link flex-row justify-center items-center font-light"
+			>
+				<div className="border-y w-full h-full px-2 border-indigo-300">
+					<div className="w-full justify-center flex flex-row items-center h-full bg-white border-x border-indigo-200 group-hover/portfolio_link:border-indigo-300 transition-all duration-200 ease-in-out">
+						<span>Portfolio</span>
+						<PiArrowUpRightBold className="duration-200 transition-all ease-in-out group-hover/portfolio_link:text-indigo-600" />
+					</div>
+				</div>
+				<span className="*:text-black/20 group-hover/portfolio_link:*:text-indigo-600 *:transition-all *:duration-200 *:ease-in-out">
+					<PiPlus className="absolute -top-[6.5px] -left-[6.5px]" />
+					<PiPlus className="absolute -top-[6.5px] -right-[6.5px]" />
+					<PiPlus className="absolute -bottom-[6.5px] -left-[6.5px]" />
+					<PiPlus className="absolute -bottom-[6.5px] -right-[6.5px]" />
+				</span>
+			</Link>
 		</section>
 	);
 };
