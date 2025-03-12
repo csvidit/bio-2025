@@ -29,7 +29,7 @@ const DayTime = () => {
   const formattedTime = timePart.trim().replace(/:/g, ' ')
 
   return (
-    <div className="text-xs uppercase">
+    <div suppressHydrationWarning className="text-xs uppercase">
       {formattedDate} {formattedTime}
     </div>
   );
